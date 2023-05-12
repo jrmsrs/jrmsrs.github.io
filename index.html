@@ -13,8 +13,8 @@
 </head>
 
 <body style="background-color: antiquewhite;">
-  <div class="bg" style="z-index: 1;"></div>
-  <div class="container" style="z-index: 2;">
+  <div class="bg" style="z-index: -1;"></div>
+  <div class="container">
     <header>
       <div class="extradiv" style="display: none;">
         placeholder
@@ -64,6 +64,7 @@
           </li>
         </ul>
       </nav>
+
     </header>
     <main>
       <section id="about" style="position: relative;">
@@ -74,14 +75,14 @@
 
           <div class="columns" style="display: absolute;">
             <pre class="avatar-frame" style="float:left; padding-right: 1rem; padding-bottom: .5rem;">
-############
-############
-############
-############
-############
-############
-############
-############</pre>
+$$$$$$$$$$$$
+$$$$$$$$$$$$
+$$$$$$$$$$$$
+$$$$$$$$$$$$
+$$$$$$$$$$$$
+$$$$$$$$$$$$
+$$$$$$$$$$$$
+$$$$$$$$$$$$</pre>
             <p>
               to-do about to-do about to-do about to-do about to-do about to-do about to-do about to-do about to-do
               about
@@ -97,7 +98,7 @@
             alt="jrmsrs avatar"
             style="position: absolute; top: 3.3rem; left: .55rem; width: 6rem; height: 6rem; -webkit-mask-image:radial-gradient(black,white); mask-image:radial-gradient(black,white)">
         </div>
-        <a class="mobile-nav" href="#portfolio" style="display: none; margin-bottom: 2rem;">→ next section</a>
+        <a class="mobile-nav" href="#portfolio" style="display: none; margin-bottom: 2rem;">→ portfolio</a>
       </section>
       <section id="portfolio">
         <div>
@@ -190,7 +191,7 @@
             </li>
           </ul>
         </div>
-        <a class="mobile-nav" href="#resume" style="display: none; margin-bottom: 2rem;">→ next section</a>
+        <a class="mobile-nav" href="#resume" style="display: none; margin-bottom: 2rem;">→ resumé</a>
       </section>
       <section id="resume">
         <div>
@@ -203,6 +204,7 @@
       </section>
 
       <a class="gotop" href="#top">↑ it's over</a>
+
     </main>
   </div>
 </body>
@@ -242,7 +244,7 @@
     background: url(./img/bg.svg) fixed;
     position: center;
     background-size: cover;
-    height: 100%;
+    min-height: 100dvh;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -323,7 +325,6 @@
   }
 
   .logo-container {
-    margin-bottom: 1rem;
     text-decoration: none;
     color: white !important;
     margin-bottom: 1rem;
@@ -385,7 +386,7 @@
     color: white;
     max-width: 43rem;
     overflow: scroll;
-    margin: auto;
+    margin: auto !important;
     padding: 1rem;
   }
 
@@ -397,16 +398,19 @@
     left: calc(100dvw - var(--width));
     width: 100vw;
     height: 100dvh;
+    overflow: hidden;
     opacity: 90%;
     background: url(./img/netsurfing.png) no-repeat;
     transform: scale(0.5);
-    padding: 1rem;
-    margin-bottom: 1rem;
+    padding: 0 1rem;
   }
 
   @media (max-width: 850px) {
     .container {
-      max-width: 100vw;
+      width: 100%;
+      margin: 0;
+      overflow: hidden;
+      padding: 0 1rem !important;
     }
 
     .bg {
@@ -440,7 +444,7 @@
     }
 
     section {
-      display: flex;
+      display: none;
       flex-direction: column;
       justify-content: space-between;
     }
@@ -452,6 +456,15 @@
 
     .gotop {
       display: none;
+    }
+
+    :target {
+      display: flex;
+    }
+
+    .logo-sm,
+    .logo-xsm {
+      font-weight: bold;
     }
   }
 
