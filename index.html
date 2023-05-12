@@ -15,22 +15,23 @@
 <body style="background-color: antiquewhite;">
   <div class="bg" style="z-index: 1;"></div>
   <div class="container" style="z-index: 2;">
-    <a href="#" class="header">
-      <pre class="logo-lg" style="text-align: center;">
+    <header>
+      <a href="#" class="logo-container">
+        <pre class="logo-lg" style="text-align: center;">
    88  8b,dPPYba,  88,dPYba,,adPYba,   ,adPPYba,  8b,dPPYba,  ,adPPYba,
    88  88P'   "Y8  88P'   "88"    "8a  I8[    ""  88P'   "Y8  I8[    ""
    88  88          88      88      88   `"Y8ba,   88           `"Y8ba, 
   ,88  88          88      88      88  aa    ]8I  88          aa    ]8I
 888P   88          88      88      88  `"YbbdP"'  88          `"YbbdP"'</pre>
 
-      <pre class="logo-sm" style="text-align: center;">
+        <pre class="logo-sm" style="text-align: center;">
     .  .__  , _ , _     ___ .__    ___
     \  /  \ |' `|' `.  (    /  \  (   
     |  | \' |   |   |  `-.  | \'  `-. 
 /`  |  /  \ /   '   / \__.' /  \ \__.'
 \___/`                                </pre>
 
-      <pre class="logo-xsm" style="text-align: center;">
+        <pre class="logo-xsm" style="text-align: center;">
     .  .__  , _ , _   
     \  /  \ |' `|' `. 
     |  | \' |   |   | 
@@ -41,33 +42,35 @@
    \__.' /  \ \__.'   
                       </pre>
 
-      <pre style="text-align: center;">✨ database ✨</pre>
-    </a>
-    <nav>
-      <ul>
-        <li>
-          <a style="background-color: paleturquoise;" href="#about">about</a>
-        </li>
-      </ul>
-      <ul>
-        <li>
-          <a style="background-color: paleturquoise;" href="#portfolio">portfolio</a>
-        </li>
-      </ul>
-      <ul>
-        <li>
-          <a style="background-color: paleturquoise;" href="#resume">resumé</a>
-        </li>
-      </ul>
-    </nav>
-
+        <pre style="text-align: center;">✨ database ✨</pre>
+      </a>
+      <nav>
+        <ul>
+          <li>
+            <a style="background-color: paleturquoise;" href="#about">about</a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a style="background-color: paleturquoise;" href="#portfolio">portfolio</a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a style="background-color: paleturquoise;" href="#resume">resumé</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
     <main>
       <section id="about" style="position: relative;">
-        <h1>
-          # about
-        </h1>
-        <div class="columns" style="display: absolute;">
-          <pre class="avatar-frame" style="float:left; padding-right: 1rem; padding-bottom: .5rem;">
+        <div>
+          <h1>
+            # about
+          </h1>
+
+          <div class="columns" style="display: absolute;">
+            <pre class="avatar-frame" style="float:left; padding-right: 1rem; padding-bottom: .5rem;">
 ############
 ############
 ############
@@ -76,112 +79,127 @@
 ############
 ############
 ############</pre>
-          <p>
-            to-do about to-do about to-do about to-do about to-do about to-do about to-do about to-do about to-do about
-            to-do about to-do about to-do about to-do about to-do about to-do about to-do about to-do about to-do about
-            to-do about to-do about to-do about to-do about to-do about to-do about to-do about to-do about to-do about
-            to-do about to-do about to-do about to-do about to-do about to-do about to-do about to-do about to-do about
-          </p>
+            <p>
+              to-do about to-do about to-do about to-do about to-do about to-do about to-do about to-do about to-do
+              about
+              to-do about to-do about to-do about to-do about to-do about to-do about to-do about to-do about to-do
+              about
+              to-do about to-do about to-do about to-do about to-do about to-do about to-do about to-do about to-do
+              about
+              to-do about to-do about to-do about to-do about to-do about to-do about to-do about to-do about to-do
+              about
+            </p>
+          </div>
+          <img class="avatar" src="https://gitlab.com/uploads/-/system/user/avatar/12187631/avatar.png?width=400"
+            alt="jrmsrs avatar"
+            style="position: absolute; top: 3.3rem; left: .55rem; width: 6rem; height: 6rem; -webkit-mask-image:radial-gradient(black,white); mask-image:radial-gradient(black,white)">
         </div>
-        <img class="avatar" src="https://gitlab.com/uploads/-/system/user/avatar/12187631/avatar.png?width=400"
-          alt="jrmsrs avatar"
-          style="position: absolute; top: 3.3rem; left: .55rem; width: 6rem; height: 6rem; -webkit-mask-image:radial-gradient(black,white); mask-image:radial-gradient(black,white)">
+        <a class="mobile-nav" href="#portfolio" style="display: none; margin-bottom: 2rem;">→ next section</a>
       </section>
       <section id="portfolio">
-        <h1>
-          # portfolip (as developer)
-        </h1>
-        <ul>
-          <li id="PlatCon">
-            <h3> ## PlatCon (<a href="https://6awyw9fr-yw8piux6ick072-3c1xjeqn.vercel.app/channels">deploy</a>) -
-              another
-              - more
-              complex - svelte project </h3>
-            <p> Fullstack uses sveltekit template I built <a
-                href="https://github.com/jrmsrs/sveltekit-tailwind-supabase-ts">here</a>, which in turn was built from
-              the
-              <a href="#svelte-mento">svelte-mento</a> project. (unfinished yet)
-            </p>
-            <div class="portfolio-imgs">
-              <img src="/img/plat3.png" alt="PlatCon screenshot #1">
-              <img src="/img/plat4.png" alt="PlatCon screenshot #2">
-              <img src="/img/plat2.png" alt="PlatCon screenshot #3">
-              <img src="/img/plat0.png" alt="PlatCon screenshot #4">
-              <img src="/img/plat1.png" alt="PlatCon screenshot #5">
+        <div>
+          <h1>
+            # portfolip (as developer)
+          </h1>
+          <ul>
+            <li id="PlatCon">
+              <h3> ## PlatCon (<a href="https://6awyw9fr-yw8piux6ick072-3c1xjeqn.vercel.app/channels">deploy</a>) -
+                another
+                - more
+                complex - svelte project </h3>
+              <p> Fullstack uses sveltekit template I built <a
+                  href="https://github.com/jrmsrs/sveltekit-tailwind-supabase-ts">here</a>, which in turn was built from
+                the
+                <a href="#svelte-mento">svelte-mento</a> project. (unfinished yet)
+              </p>
+              <div class="portfolio-imgs">
+                <img src="/img/plat3.png" alt="PlatCon screenshot #1">
+                <img src="/img/plat4.png" alt="PlatCon screenshot #2">
+                <img src="/img/plat2.png" alt="PlatCon screenshot #3">
+                <img src="/img/plat0.png" alt="PlatCon screenshot #4">
+                <img src="/img/plat1.png" alt="PlatCon screenshot #5">
 
 
-            </div>
-          </li>
-          <li id="svelte-mento">
-            <h3> ## <a href="https://gitlab.com/jrmsrs/svelte-mento">svelte-mento</a> (<a
-                href="https://svelte-mento.vercel.app/">deploy</a>) - album discover app</h3>
-            <p> a svelte frontend app that
-              just integrate a Last.fm
-              API with a very popular tag (1001 albums to listen before you die) and daily recommends you 6 albums every
-              day at homepage, etc.</p>
-            <p> Note: This is a very personal project
-              from
-              when I
-              started to delve into good coding practices,
-              performance and handle with complexity that I had neglected in the rush while I needed to deliver the
-              <a href="#Ticket.io">Ticket.io</a>
-              project at the right time. my first contact with typescript, unit and interface tests, redis caching, and
-              this time using
-              Tailwind I was breaking my head with styling more than in the previous project where I just copypasted
-              examples
-              from the Bootstrap documentation.
-            </p>
-            <div class="portfolio-imgs">
-              <img src="/img/mento0.png" alt="svelte-mento screenshot #1">
+              </div>
+            </li>
+            <li id="svelte-mento">
+              <h3> ## <a href="https://gitlab.com/jrmsrs/svelte-mento">svelte-mento</a> (<a
+                  href="https://svelte-mento.vercel.app/">deploy</a>) - album discover app</h3>
+              <p> a svelte frontend app that
+                just integrate a Last.fm
+                API with a very popular tag (1001 albums to listen before you die) and daily recommends you 6 albums
+                every
+                day at homepage, etc.</p>
+              <p> Note: This is a very personal project
+                from
+                when I
+                started to delve into good coding practices,
+                performance and handle with complexity that I had neglected in the rush while I needed to deliver the
+                <a href="#Ticket.io">Ticket.io</a>
+                project at the right time. my first contact with typescript, unit and interface tests, redis caching,
+                and
+                this time using
+                Tailwind I was breaking my head with styling more than in the previous project where I just copypasted
+                examples
+                from the Bootstrap documentation.
+              </p>
+              <div class="portfolio-imgs">
+                <img src="/img/mento0.png" alt="svelte-mento screenshot #1">
 
-              <img src="/img/mento3.png" alt="svelte-mento screenshot #4">
-              <img src="/img/mento1.png" alt="svelte-mento screenshot #2">
+                <img src="/img/mento3.png" alt="svelte-mento screenshot #4">
+                <img src="/img/mento1.png" alt="svelte-mento screenshot #2">
 
-              <img src="/img/mento5.png" alt="svelte-mento screenshot #6">
-              <img src="/img/mento2.png" alt="svelte-mento screenshot #3">
-              <img src="/img/mento4.png" alt="svelte-mento screenshot #5">
-            </div>
-          </li>
-          <li id="Ticket.io">
-            <h3>
-              ## <a href="https://gitlab.com/jrmsrs/ticket.io-front">Ticket.io</a> (<a
-                href="https://ticket-io-front-git-dev-jrmsrs.vercel.app/">deploy</a>) - IT Problem Management Platform
-            </h3>
-            <p>I did it in group in for Systems Design and Construction course at my university, it was one of my
-              first contacts with web development, a fullstack Node.JS/Express application, MySQL, Firebase & React.</p>
-            <div class="portfolio-imgs">
-              <img src="/img/tio0.png" alt="Ticket.io screenshot #1">
-              <img src="/img/tio1.png" alt="Ticket.io screenshot #2">
-              <img src="/img/tio4.png" alt="Ticket.io screenshot #5">
-              <img src="/img/tio5.png" alt="Ticket.io screenshot #6">
-              <img src="/img/tio2.png" alt="Ticket.io screenshot #3">
-              <img src="/img/tio3.png" alt="Ticket.io screenshot #4">
-            </div>
-          </li>
-          <li id="coelho-souls">
-            <h3> ## <a href="https://gitlab.com/jrmsrs/coelho-souls">coelho-souls</a> (<a
-                href="https://jrmsrs.itch.io/coelhosouls">play at itch.io</a>) - Platform Game </h3>
-            <p>A metroidvania open-source game I made
-              (individually) in one semester for a Game Project course at my university using the Godot 3 game engine.
-              except music, all assets were made by me.</p>
-            <div class="portfolio-imgs">
-              <img src="/img/coelho0.png" alt="coelho-souls screenshot #1">
-              <img src="/img/coelho1.png" alt="coelho-souls screenshot #2">
-              <img src="/img/coelho2.png" alt="coelho-souls screenshot #3">
-              <img src="/img/coelho3.png" alt="coelho-souls screenshot #4">
-              <img src="/img/coelho4.png" alt="coelho-souls screenshot #5">
-            </div>
-          </li>
-        </ul>
+                <img src="/img/mento5.png" alt="svelte-mento screenshot #6">
+                <img src="/img/mento2.png" alt="svelte-mento screenshot #3">
+                <img src="/img/mento4.png" alt="svelte-mento screenshot #5">
+              </div>
+            </li>
+            <li id="Ticket.io">
+              <h3>
+                ## <a href="https://gitlab.com/jrmsrs/ticket.io-front">Ticket.io</a> (<a
+                  href="https://ticket-io-front-git-dev-jrmsrs.vercel.app/">deploy</a>) - IT Problem Management Platform
+              </h3>
+              <p>I did it in group in for Systems Design and Construction course at my university, it was one of my
+                first contacts with web development, a fullstack Node.JS/Express application, MySQL, Firebase & React.
+              </p>
+              <div class="portfolio-imgs">
+                <img src="/img/tio0.png" alt="Ticket.io screenshot #1">
+                <img src="/img/tio1.png" alt="Ticket.io screenshot #2">
+                <img src="/img/tio4.png" alt="Ticket.io screenshot #5">
+                <img src="/img/tio5.png" alt="Ticket.io screenshot #6">
+                <img src="/img/tio2.png" alt="Ticket.io screenshot #3">
+                <img src="/img/tio3.png" alt="Ticket.io screenshot #4">
+              </div>
+            </li>
+            <li id="coelho-souls">
+              <h3> ## <a href="https://gitlab.com/jrmsrs/coelho-souls">coelho-souls</a> (<a
+                  href="https://jrmsrs.itch.io/coelhosouls">play at itch.io</a>) - Platform Game </h3>
+              <p>A metroidvania open-source game I made
+                (individually) in one semester for a Game Project course at my university using the Godot 3 game engine.
+                except music, all assets were made by me.</p>
+              <div class="portfolio-imgs">
+                <img src="/img/coelho0.png" alt="coelho-souls screenshot #1">
+                <img src="/img/coelho1.png" alt="coelho-souls screenshot #2">
+                <img src="/img/coelho2.png" alt="coelho-souls screenshot #3">
+                <img src="/img/coelho3.png" alt="coelho-souls screenshot #4">
+                <img src="/img/coelho4.png" alt="coelho-souls screenshot #5">
+              </div>
+            </li>
+          </ul>
+        </div>
+        <a class="mobile-nav" href="#resume" style="display: none; margin-bottom: 2rem;">→ next section</a>
       </section>
       <section id="resume">
-        <h1>
-          # resumé
-        </h1>
-        <p>to-do resumé</p>
+        <div>
+          <h1>
+            # resumé
+          </h1>
+          <p>to-do resumé</p>
+        </div>
+        <a class="mobile-nav" href="#top" style="display: none; margin-bottom: 2rem;">↑ it's over</a>
       </section>
 
-      <a href="#top">↑ it's over</a>
+      <a class="gotop" href="#top">↑ it's over</a>
     </main>
   </div>
 </body>
@@ -299,7 +317,7 @@
     background-color: black !important
   }
 
-  .header {
+  .logo-container {
     margin-bottom: 1rem;
     text-decoration: none;
     color: white !important;
@@ -387,6 +405,38 @@
     }
 
     .bg {
+      display: none;
+    }
+
+    section {
+      min-height: 100vh;
+    }
+
+    header {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .logo-container {
+      margin: auto !important;
+    }
+
+    nav {
+      margin-bottom: 2rem;
+    }
+
+    section {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .mobile-nav {
+      display: block !important;
+    }
+
+    .gotop {
       display: none;
     }
   }
