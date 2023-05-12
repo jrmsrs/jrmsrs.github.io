@@ -6,6 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>jrmsrs websítio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,600;1,100&display=swap"
+    rel="stylesheet">
 </head>
 
 <body style="background-color: antiquewhite;">
@@ -22,15 +26,15 @@
       <pre class="logo-sm" style="text-align: center;">
     .  .__  , _ , _     ___ .__    ___
     \  /  \ |' `|' `.  (    /  \  (   
-    |  |  ' |   |   |  `-.  | \'  `-. 
-/`  |  /    /   '   / \__.' /  \ \__.'
+    |  | \' |   |   |  `-.  | \'  `-. 
+/`  |  /  \ /   '   / \__.' /  \ \__.'
 \___/`                                </pre>
 
       <pre class="logo-xsm" style="text-align: center;">
     .  .__  , _ , _   
     \  /  \ |' `|' `. 
-    |  |  ' |   |   | 
-/`  |  /    /   '   / 
+    |  | \' |   |   | 
+/`  |  /  \ /   '   / 
 \___/.__ .__    ___   
     (    /  \  (      
     `-.  | \'  `-.    
@@ -62,16 +66,16 @@
         <h1>
           # about
         </h1>
-        <div class="columns" style="display: flex; gap: 0.5rem;">
-          <pre class="avatar-frame">
-#############
-#############
-#############
-#############
-#############
-#############
-#############
-#############</pre>
+        <div class="columns" style="display: absolute;">
+          <pre class="avatar-frame" style="float:left; padding-right: 1rem; padding-bottom: .5rem;">
+############
+############
+############
+############
+############
+############
+############
+############</pre>
           <p>
             to-do about to-do about to-do about to-do about to-do about to-do about to-do about to-do about to-do about
             to-do about to-do about to-do about to-do about to-do about to-do about to-do about to-do about to-do about
@@ -81,7 +85,7 @@
         </div>
         <img class="avatar" src="https://gitlab.com/uploads/-/system/user/avatar/12187631/avatar.png?width=400"
           alt="jrmsrs avatar"
-          style="position: absolute; top: 2.68rem; left: .5rem; width: 6rem; height: 6rem; -webkit-mask-image:radial-gradient(black,white); mask-image:radial-gradient(black,white)">
+          style="position: absolute; top: 3.3rem; left: .55rem; width: 6rem; height: 6rem; -webkit-mask-image:radial-gradient(black,white); mask-image:radial-gradient(black,white)">
       </section>
       <section id="portfolio">
         <h1>
@@ -177,19 +181,28 @@
         <p>to-do resumé</p>
       </section>
 
-      <a href="#top">it's over</a>
+      <a href="#top">↑ it's over</a>
     </main>
   </div>
 </body>
 
 <style>
   :target {
-    background-color: greenyellow;
-    color: black;
+    animation: highlight .5s ease-in-out;
   }
 
-  :target a {
-    color: rgb(111, 72, 175);
+  @keyframes highlight {
+    0% {
+      background: black;
+    }
+
+    50% {
+      background: greenyellow;
+    }
+
+    100% {
+      background: none;
+    }
   }
 
   html:target {
@@ -204,12 +217,17 @@
     display: flex;
     flex: auto;
     background: url(./img/bg.svg) fixed;
+    position: center;
     background-size: cover;
     height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   }
 
   .portfolio-imgs {
-    margin-top: 0.5rem;
+    margin-top: 1rem;
     display: flex;
     gap: 1rem;
     height: 26rem;
@@ -236,7 +254,7 @@
   h5,
   h6 {
     max-width: 100%;
-    font-family: monospace;
+    font-family: 'Roboto Mono', monospace;
     font-size: 1rem;
     font-weight: 100;
     margin: 0;
@@ -247,14 +265,18 @@
   h1 {
     background-color: rgba(0, 0, 0, 0.5);
     padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
   }
 
   h3 {
     background-color: rgba(0, 0, 0, 0.2);
+    margin-bottom: 0.5rem;
   }
 
-  pre {
+  pre,
+  p {
     line-height: 1rem;
+    margin-bottom: 0.5rem;
   }
 
   nav {
@@ -280,7 +302,7 @@
   .header {
     margin-bottom: 1rem;
     text-decoration: none;
-    color: white;
+    color: white !important;
     margin-bottom: 1rem;
     display: block;
   }
@@ -338,11 +360,10 @@
   .container {
     background-color: rgba(63, 0, 0, 0.562);
     color: white;
-    max-width: 39rem;
+    max-width: 43rem;
     overflow: scroll;
     margin: auto;
     padding: 1rem;
-    backdrop-filter: blur(2rem);
   }
 
   .bg {
@@ -390,13 +411,25 @@
   }
 
   ::-webkit-scrollbar {
-    width: 0;
+    width: 16px;
     height: 12px;
   }
 
+  div::-webkit-scrollbar {
+    width: 0px;
+    height: 12px;
+  }
 
   ::-webkit-scrollbar-thumb {
     background: aquamarine;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: rgb(92, 41, 92);
+  }
+
+  div::-webkit-scrollbar-track {
+    background-color: transparent;
   }
 
   ::-webkit-scrollbar-thumb:hover {
