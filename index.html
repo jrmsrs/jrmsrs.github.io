@@ -16,6 +16,9 @@
   <div class="bg" style="z-index: 1;"></div>
   <div class="container" style="z-index: 2;">
     <header>
+      <div class="extradiv" style="display: none;">
+        placeholder
+      </div>
       <a href="#" class="logo-container">
         <pre class="logo-lg" style="text-align: center;">
    88  8b,dPPYba,  88,dPYba,,adPYba,   ,adPPYba,  8b,dPPYba,  ,adPPYba,
@@ -416,10 +419,18 @@
       min-height: 100vh;
       display: flex;
       flex-direction: column;
+      justify-content: space-between;
     }
 
     .logo-container {
-      margin: auto !important;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .extradiv {
+      opacity: 0;
+      display: block !important;
     }
 
     nav {
