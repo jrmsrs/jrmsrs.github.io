@@ -9,20 +9,34 @@
 </head>
 
 <body style="background-color: antiquewhite;">
-  <div class="container">
+  <div class="bg" style="z-index: 1;"></div>
+  <div class="container" style="z-index: 2;">
     <a href="#" class="header">
-      <pre class="logo-lg">
+      <pre class="logo-lg" style="text-align: center;">
    88  8b,dPPYba,  88,dPYba,,adPYba,   ,adPPYba,  8b,dPPYba,  ,adPPYba,
    88  88P'   "Y8  88P'   "88"    "8a  I8[    ""  88P'   "Y8  I8[    ""
    88  88          88      88      88   `"Y8ba,   88           `"Y8ba, 
   ,88  88          88      88      88  aa    ]8I  88          aa    ]8I
 888P   88          88      88      88  `"YbbdP"'  88          `"YbbdP"'</pre>
+
       <pre class="logo-sm" style="text-align: center;">
     .  .__  , _ , _     ___ .__    ___
     \  /  \ |' `|' `.  (    /  \  (   
-    |  |  ' |   |   |  `-.  |  '  `-. 
-/`  |  /    /   '   / \__.' /    \__.'
+    |  |  ' |   |   |  `-.  | \'  `-. 
+/`  |  /    /   '   / \__.' /  \ \__.'
 \___/`                                </pre>
+
+      <pre class="logo-xsm" style="text-align: center;">
+    .  .__  , _ , _   
+    \  /  \ |' `|' `. 
+    |  |  ' |   |   | 
+/`  |  /    /   '   / 
+\___/.__ .__    ___   
+    (    /  \  (      
+    `-.  | \'  `-.    
+   \__.' /  \ \__.'   
+                      </pre>
+
       <pre style="text-align: center;">✨ database ✨</pre>
     </a>
     <nav>
@@ -48,8 +62,8 @@
         <h1>
           # about
         </h1>
-        <div style="display: flex; gap: 0.5rem;">
-          <pre>
+        <div class="columns" style="display: flex; gap: 0.5rem;">
+          <pre class="avatar-frame">
 #############
 #############
 #############
@@ -65,7 +79,8 @@
             to-do about to-do about to-do about to-do about to-do about to-do about to-do about to-do about to-do about
           </p>
         </div>
-        <img src="https://gitlab.com/uploads/-/system/user/avatar/12187631/avatar.png?width=400" alt="jrmsrs avatar"
+        <img class="avatar" src="https://gitlab.com/uploads/-/system/user/avatar/12187631/avatar.png?width=400"
+          alt="jrmsrs avatar"
           style="position: absolute; top: 2.68rem; left: .5rem; width: 6rem; height: 6rem; -webkit-mask-image:radial-gradient(black,white); mask-image:radial-gradient(black,white)">
       </section>
       <section id="portfolio">
@@ -73,34 +88,24 @@
           # portfolip (as developer)
         </h1>
         <ul>
-          <li id="Ticket.io">
-            <h3>
-              ## <a href="https://gitlab.com/jrmsrs/ticket.io-front">Ticket.io</a> (<a
-                href="https://ticket-io-front-git-dev-jrmsrs.vercel.app/">deploy</a>) - IT Problem Management Platform
-            </h3>
-            <p>I did it in group in for Systems Design and Construction course at my university, it was one of my
-              first contacts with web development, a fullstack Node.JS/Express application, MySQL, Firebase & React.</p>
+          <li id="PlatCon">
+            <h3> ## PlatCon (<a href="https://6awyw9fr-yw8piux6ick072-3c1xjeqn.vercel.app/channels">deploy</a>) -
+              another
+              - more
+              complex - svelte project </h3>
+            <p> Fullstack uses sveltekit template I built <a
+                href="https://github.com/jrmsrs/sveltekit-tailwind-supabase-ts">here</a>, which in turn was built from
+              the
+              <a href="#svelte-mento">svelte-mento</a> project. (unfinished yet)
+            </p>
             <div class="portfolio-imgs">
-              <img src="/img/tio0.png" alt="Ticket.io screenshot #1">
-              <img src="/img/tio1.png" alt="Ticket.io screenshot #2">
-              <img src="/img/tio4.png" alt="Ticket.io screenshot #5">
-              <img src="/img/tio5.png" alt="Ticket.io screenshot #6">
-              <img src="/img/tio2.png" alt="Ticket.io screenshot #3">
-              <img src="/img/tio3.png" alt="Ticket.io screenshot #4">
-            </div>
-          </li>
-          <li id="coelho-souls">
-            <h3> ## <a href="https://gitlab.com/jrmsrs/coelho-souls">coelho-souls</a> (<a
-                href="https://jrmsrs.itch.io/coelhosouls">play at itch.io</a>) - Platform Game </h3>
-            <p>A metroidvania open-source game I made
-              (individually) in one semester for a Game Project course at my university using the Godot 3 game engine.
-              except music, all assets were made by me.</p>
-            <div class="portfolio-imgs">
-              <img src="/img/coelho0.png" alt="coelho-souls screenshot #1">
-              <img src="/img/coelho1.png" alt="coelho-souls screenshot #2">
-              <img src="/img/coelho2.png" alt="coelho-souls screenshot #3">
-              <img src="/img/coelho3.png" alt="coelho-souls screenshot #4">
-              <img src="/img/coelho4.png" alt="coelho-souls screenshot #5">
+              <img src="/img/plat3.png" alt="PlatCon screenshot #1">
+              <img src="/img/plat4.png" alt="PlatCon screenshot #2">
+              <img src="/img/plat2.png" alt="PlatCon screenshot #3">
+              <img src="/img/plat0.png" alt="PlatCon screenshot #4">
+              <img src="/img/plat1.png" alt="PlatCon screenshot #5">
+
+
             </div>
           </li>
           <li id="svelte-mento">
@@ -132,18 +137,36 @@
               <img src="/img/mento4.png" alt="svelte-mento screenshot #5">
             </div>
           </li>
-          <li id="PlatCon">
-            <h3> ## PlatCon (<a href="https://6awyw9fr-yw8piux6ick072-3c1xjeqn.vercel.app/channels">deploy</a>) -
-              another
-              - more
-              complex - svelte project </h3>
-            <p> Fullstack uses sveltekit template I built <a
-                href="https://github.com/jrmsrs/sveltekit-tailwind-supabase-ts">here</a>, which in turn was built from
-              the
-              <a href="#svelte-mento">svelte-mento</a> project. (unfinished yet)
-            </p>
+          <li id="Ticket.io">
+            <h3>
+              ## <a href="https://gitlab.com/jrmsrs/ticket.io-front">Ticket.io</a> (<a
+                href="https://ticket-io-front-git-dev-jrmsrs.vercel.app/">deploy</a>) - IT Problem Management Platform
+            </h3>
+            <p>I did it in group in for Systems Design and Construction course at my university, it was one of my
+              first contacts with web development, a fullstack Node.JS/Express application, MySQL, Firebase & React.</p>
+            <div class="portfolio-imgs">
+              <img src="/img/tio0.png" alt="Ticket.io screenshot #1">
+              <img src="/img/tio1.png" alt="Ticket.io screenshot #2">
+              <img src="/img/tio4.png" alt="Ticket.io screenshot #5">
+              <img src="/img/tio5.png" alt="Ticket.io screenshot #6">
+              <img src="/img/tio2.png" alt="Ticket.io screenshot #3">
+              <img src="/img/tio3.png" alt="Ticket.io screenshot #4">
+            </div>
           </li>
-
+          <li id="coelho-souls">
+            <h3> ## <a href="https://gitlab.com/jrmsrs/coelho-souls">coelho-souls</a> (<a
+                href="https://jrmsrs.itch.io/coelhosouls">play at itch.io</a>) - Platform Game </h3>
+            <p>A metroidvania open-source game I made
+              (individually) in one semester for a Game Project course at my university using the Godot 3 game engine.
+              except music, all assets were made by me.</p>
+            <div class="portfolio-imgs">
+              <img src="/img/coelho0.png" alt="coelho-souls screenshot #1">
+              <img src="/img/coelho1.png" alt="coelho-souls screenshot #2">
+              <img src="/img/coelho2.png" alt="coelho-souls screenshot #3">
+              <img src="/img/coelho3.png" alt="coelho-souls screenshot #4">
+              <img src="/img/coelho4.png" alt="coelho-souls screenshot #5">
+            </div>
+          </li>
         </ul>
       </section>
       <section id="resume">
@@ -179,7 +202,8 @@
   body {
     display: flex;
     flex: auto;
-    background: linear-gradient(black, white) fixed;
+    background: url(./img/bg.svg) fixed;
+    background-size: cover;
     height: 100%;
   }
 
@@ -264,6 +288,34 @@
     display: none;
   }
 
+  .logo-xsm {
+    display: none;
+  }
+
+  @media (max-width: 364px) {
+    .logo-xsm {
+      display: block;
+    }
+
+    .logo-sm {
+      display: none !important;
+    }
+
+    .columns {
+      display: block;
+    }
+
+    .avatar {
+      position: initial !important;
+      width: 100% !important;
+      height: auto !important;
+    }
+
+    .avatar-frame {
+      display: none;
+    }
+  }
+
   @media (max-width: 640px) {
     .logo-sm {
       display: block;
@@ -289,6 +341,51 @@
     overflow: scroll;
     margin: auto;
     padding: 1rem;
+    backdrop-filter: blur(2rem);
+  }
+
+  .bg {
+    --width: 550px;
+    --height: 550px;
+    position: fixed;
+    top: calc(100% - var(--height));
+    left: calc(100% - var(--width));
+    width: 100vw;
+    height: 100vh;
+    opacity: 90%;
+    background: url(./img/netsurfing.png) no-repeat;
+    transform: scale(0.5);
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  @media (max-width: 850px) {
+    .container {
+      max-width: 100vw;
+    }
+
+    .bg {
+      display: none;
+    }
+  }
+
+  @media (max-width: 1050px) {
+    .bg {
+      --width: 450px;
+      --height: 550px;
+    }
+  }
+
+  @media (min-width: 1050px) {
+    .bg {
+      transform: scale(.75);
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .bg {
+      transform: scale(1);
+    }
   }
 
   ::-webkit-scrollbar {
