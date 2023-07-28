@@ -30,7 +30,19 @@
     display: none;
   }
 }
+@media (min-width: 850px) {
+  .avatar {
+    top: 3.3rem; 
+  }
+  .cmdline-input {
+    display: none;
+  }
+}
 @media (max-width: 850px) {
+  .cmdline-input {
+    display: inline;
+  }
+
   .container {
     width: 100%;
     margin: 0;

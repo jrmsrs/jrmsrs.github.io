@@ -6,6 +6,29 @@
   overflow: scroll;
 }
 
+.blink {
+  animation: blink 1s infinite;
+}
+
+#resume:target {
+  display: block !important;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+}
+
 #portfolio li {
   margin-bottom: 1rem;
 }
@@ -13,7 +36,8 @@
 .logo-container {
   text-decoration: none;
   color: white !important;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
   display: block;
 }
 
@@ -47,4 +71,14 @@
   background: url(../img/netsurfing.png) no-repeat;
   transform: scale(0.5);
   padding: 0 1rem;
+}
+
+.avatar {
+  position: absolute; 
+  top: 6.3rem; 
+  left: .55rem; 
+  width: 6rem; 
+  height: 6rem; 
+  -webkit-mask-image:radial-gradient(black,white); 
+  mask-image:radial-gradient(black,white)
 }

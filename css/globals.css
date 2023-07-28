@@ -90,6 +90,19 @@ section {
 }
 
 a {
-  color: aquamarine
+  color: aquamarine;
+  cursor: default;
+}
+
+p {
+  cursor: text;
+}
+
+a:hover {
+  color: rgb(206, 250, 235);
+}
+
+img {
+  pointer-events: none;
 }
 
