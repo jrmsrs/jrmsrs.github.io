@@ -1,0 +1,95 @@
+:target {
+  animation: highlight .5s ease-in-out;
+}
+
+@keyframes highlight {
+  0% {
+    background: black;
+  }
+
+  50% {
+    background: white;
+    color: black;
+  }
+
+  100% {
+    background: none;
+    color: white;
+  }
+}
+
+html:target {
+  background-color: transparent;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex: auto;
+  background: url(../img/bg.svg) fixed;
+  position: center;
+  background-size: cover;
+  min-height: 100dvh;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+html, body, div, ul, li, a, span, p, pre, h1, h2, h3, h4, h5, h6 {
+  max-width: 100%;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1rem;
+  font-weight: 100;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1 {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+h3 {
+  background-color: rgba(0, 0, 0, 0.2);
+  margin-bottom: 0.5rem;
+}
+
+pre, p {
+  line-height: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+nav {
+  display: flex;
+  gap: .5rem;
+}
+
+ul {
+  margin: auto;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+nav a {
+  color: black
+}
+
+nav a:hover {
+  color: white;
+  background-color: black !important
+}
+
+section {
+  margin-bottom: 1rem;
+}
+
+a {
+  color: aquamarine
+}
+

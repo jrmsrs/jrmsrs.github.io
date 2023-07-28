@@ -1,0 +1,50 @@
+.portfolio-imgs {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  height: 26rem;
+  overflow: scroll;
+}
+
+#portfolio li {
+  margin-bottom: 1rem;
+}
+
+.logo-container {
+  text-decoration: none;
+  color: white !important;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.logo-sm {
+  display: none;
+}
+
+.logo-xsm {
+  display: none;
+}
+
+.container {
+  background-color: rgba(63, 0, 0, 0.562);
+  color: white;
+  max-width: 43rem;
+  overflow: scroll;
+  margin: auto !important;
+  padding: 1rem;
+}
+
+.bg {
+  --width: 550px;
+  --height: 550px;
+  position: fixed;
+  top: 50dvh;
+  left: calc(100dvw - var(--width));
+  width: 100vw;
+  height: 100dvh;
+  overflow: hidden;
+  opacity: 90%;
+  background: url(../img/netsurfing.png) no-repeat;
+  transform: scale(0.5);
+  padding: 0 1rem;
+}
