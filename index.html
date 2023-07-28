@@ -98,12 +98,30 @@ $$$$$$$$$$$$</pre>
       <section id="portfolio">
         <div>
           <h1>
-            # portfolip (as developer)
+            # portfolio
           </h1>
           <ul>
+            <li id="ms-equipamento">
+              <h3> ## <a href="https://github.com/jrmsrs/ms-equipamento">ms-equipamento</a> (<a href="https://ms-equipamento.vercel.app/docs">docs</a>) -
+                Microsserviço que gerencia equipamentos de um bicicletário </h3>
+              <p> Faz parte de um serviço backend de um Bicicletário projetado em 3 microsserviços 
+              isolados: Aluguel, Equipamento e Externo. O Microsserviço Equipamento foi desenvolvido 
+              em Node.js, sendo responsável por manter e gerenciar bicicletas, trancas e estações.
+              </p>
+              <p> 
+                É integrado com o Microsserviço Aluguel 
+                (<a href="https://github.com/kevincrys/microsservicoAluguel">kevincrys/microsservicoAluguel</a>), 
+                que é responsável por gerenciar os aluguéis de bicicletas e os usuários, e com o Microsserviço Externo 
+                (<a href="https://github.com/Mad-Clap/Externo_PM">MadClap/Externo_PM</a>), 
+                que é responsável por se comunicar serviços externos, como o serviço de cartão de crédito e envio de emails.
+              </p>
+              <div class="portfolio-imgs">
+                <img src="/img/ms-equipamento/0.png" alt="Microsserviço Equipamento screenshot #1">
+              </div>
+            </li>
             <li id="PlatCon">
               <h3> ## PlatCon (<a href="https://6awyw9fr-yw8piux6ick072-3c1xjeqn.vercel.app/channels">deploy</a>) -
-                another - more complex - svelte project </h3>
+                a svelte project </h3>
               <p> Fullstack (svelte/postgres) uses sveltekit template I built <a
                   href="https://github.com/jrmsrs/sveltekit-tailwind-supabase-ts">here</a>, which in turn was built from the
                 <a href="#svelte-mento">svelte-mento</a> project. (unfinished yet)
@@ -114,18 +132,13 @@ $$$$$$$$$$$$</pre>
                 <img src="/img/platcon/2.png" alt="PlatCon screenshot #3">
                 <img src="/img/platcon/0.png" alt="PlatCon screenshot #4">
                 <img src="/img/platcon/1.png" alt="PlatCon screenshot #5">
-
-
               </div>
             </li>
             <li id="svelte-mento">
               <h3> ## <a href="https://gitlab.com/jrmsrs/svelte-mento">svelte-mento</a> (<a
                   href="https://svelte-mento.vercel.app/">deploy</a>) - album discover app</h3>
-              <p> a svelte frontend app that
-                just integrate a Last.fm
-                API with a very popular tag (1001 albums to listen before you die) and daily recommends you 6 albums
-                every
-                day at homepage, etc.</p>
+              <p> a svelte frontend app that just integrate a Last.fm
+                API with a very popular tag (1001 albums to listen before you die) and daily recommends you 6 albums every day at homepage, etc.</p>
               <p> 
                 Note: This is a very personal project from when I started to delve into good coding practices,
                 performance and handle with complexity that I had neglected in the rush while I needed to deliver the
